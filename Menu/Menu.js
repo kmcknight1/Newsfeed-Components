@@ -2,18 +2,11 @@
 
 const toggleMenu = () => {
   menu.classList.toggle('menu--open');
+  TweenMax.from('li', 0.5, {opacity:0, scale:0.5, ease: Back.easeInOut.config(4)});
 }
-
-
-
 
 // Start Here: Create a reference to the ".menu" class
 const menu = document.querySelector('.menu');
-
-
-
-
-
 
 
 // create a reference to the ".menu-button" class
@@ -22,3 +15,4 @@ const menu = document.querySelector('.menu');
 const menuButton = document.querySelector('.menu-button');
 
 menuButton.addEventListener('click', toggleMenu);
+

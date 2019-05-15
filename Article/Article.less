@@ -8,20 +8,28 @@
   border-radius: 10px;
   background-color: white;
   position: relative;
-  box-shadow: 2px 2px 2px lightgrey;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
 
   h2 {
     font-size: 28px;
     padding: 0;
     margin: 15px 0 0;
+    text-shadow: 1px 1px 3px grey;
   }
 
   .date {
-    margin: 0;
+    margin-bottom: 1.5%;
     font-size: 14px;
   }
 
-  
+  .article-content {
+    display: none;
+  }
+
+  .content-open {
+    display: block;
+  }
 
   .close {
     position: absolute;
@@ -30,10 +38,10 @@
   }
 
   .expandButton {
-    position: absolute;
+    // position: absolute;
     bottom: 0;
     left: 50%;
-    font-size: 12px;
+    font-size: 14px;
     color: grey;
     cursor: pointer;
     transform: translate(-50%);
@@ -42,8 +50,10 @@
 }
 
 .article-open {
-  border: 2px solid red;
+  height:400px;
 }
+
+
 
 
 

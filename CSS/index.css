@@ -21,8 +21,8 @@
 /* It is important to note, you will not be writing any CSS in this file*/
 .header {
   width: 100%;
-  height: 75px;
-  background-color: #388E3C;
+  height: 80px;
+  background-color: #a0001e;
   color: white;
   display: flex;
   justify-content: center;
@@ -34,6 +34,7 @@
 .header h1 {
   margin: 0;
   font-size: 48px;
+  text-shadow: 2px 2px 5px black;
 }
 .menu-button {
   position: absolute;
@@ -46,18 +47,28 @@
   top: 75px;
   left: 0;
   width: 350px;
-  height: 100vh;
-  /* This give the height 100% of the screen or, '100% of View Height' */
-  background-color: #81C784;
-  border: 1px solid #004D40;
+  background-color: #d30028;
+  border: 1px solid #a0001e;
   border-left: none;
   border-bottom: none;
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
+.menu ul {
+  width: 75%;
+}
+.menu li {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  border-top: 2px solid #a0001e;
+}
+.menu li:hover {
+  background-color: #a0001e;
+  cursor: pointer;
+}
 .menu ul li {
   list-style-type: none;
-  font-size: 32px;
+  font-size: 30px;
   padding: 30px 0;
   text-align: center;
 }
@@ -74,18 +85,24 @@
   border-radius: 10px;
   background-color: white;
   position: relative;
-  height: 50px;
-  overflow: hidden;
-  box-shadow: 2px 2px 2px lightgrey;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
 }
 .article h2 {
   font-size: 28px;
   padding: 0;
   margin: 15px 0 0;
+  text-shadow: 1px 1px 3px grey;
 }
 .article .date {
-  margin: 0;
+  margin-bottom: 1.5%;
   font-size: 14px;
+}
+.article .article-content {
+  display: none;
+}
+.article .content-open {
+  display: block;
 }
 .article .close {
   position: absolute;
@@ -93,10 +110,9 @@
   right: 10px;
 }
 .article .expandButton {
-  position: absolute;
   bottom: 0;
   left: 50%;
-  font-size: 12px;
+  font-size: 14px;
   color: grey;
   cursor: pointer;
   transform: translate(-50%);
